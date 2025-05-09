@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.body {
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.flex-container-one {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+
+.flex-container-two {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  border-radius: 15px;
+  background-color: #ffffff;
+  flex-direction: column;
+  
+  width: 80%;
+}
+.form{
+  width: 55%;
+  
+}
+
+label {
+  color: #666;
+  font-size: 14px;
+}
+
+.input-group1, .input-group2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  input {
+    
+    padding-inline-start: 100px 44px;
+    padding-inline-end:80%;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+}
+
+
+footer{
+  display: flex;
+  flex-direction: column;
+  margin-left:35%;
+a{
+  margin-left:16%;
+}
+  
+}
+.flex-container-two h3 {
+  font-weight: 500;
+  font-size: 22px;
+}
+.remember-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  white-space: nowrap;
+  
+}
+
+.flex-container-two button {
+  padding: 15px 50px;
+  margin:20px;
+  border: none;
+  background: #16423c;
+  text-align: center;
+  color: white;
+  border-radius: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #6fa9ff;
+  font-size: 14px;
+  margin-left: 10px; 
+}
+
+.new-account-container {
+  width: 100%;
+  text-align: center;
+}
+
+.topic {
+  display: flex;
+  gap: 20px;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.head {
+  display: flex;
+  gap: 20px;
+  color: white;
+}
+
+img {
+  width: 50px;
+}
+.sign-in{
+  margin-left: 55px;
+}
+
+.flex-container-one {
+  background: #6a9c89;
+  flex-direction: column;
+}
+.picture {
+  width: 80%;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 2rem;
+}
+p{
+  font: size 92px;
+  font-weight: 700;
+}
+

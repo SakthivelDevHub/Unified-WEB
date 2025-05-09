@@ -1,0 +1,88 @@
+/* Wrapper background */
+.custom-step-wrapper {
+
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 320px;
+  margin: auto;
+  margin-top: 50%;
+
+}
+
+/* Step titles */
+.ant-steps-item-title {
+  color: white !important;
+  font-weight: 500;
+}
+
+/* Hide all step numbers */
+.ant-steps-item-icon > .ant-steps-icon {
+  visibility: hidden;
+}
+
+/* Step circle appearance */
+.ant-steps-item-icon {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+/* Completed step: show green tick */
+.ant-steps-item-finish .ant-steps-icon {
+  visibility: visible !important;
+  color: #6fa392 !important; /* Green checkmark */
+  font-weight: bold;
+}
+
+/* Active step: empty white circle */
+.ant-steps-item-process .ant-steps-item-icon {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+/* Upcoming steps: white circle, slightly faded */
+.ant-steps-item-wait .ant-steps-item-icon {
+  background-color: white !important;
+  border-color: white !important;
+}
+
+/* Connector line between steps */
+.ant-steps-item-tail::after {
+  background-color: white !important;
+}
+
+/* Optional: Slight fade for upcoming text */
+.ant-steps-item-wait .ant-steps-item-title {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.ant-steps-item-tail {
+  
+  height: 155px !important;
+  margin-top: -34px; /* increase to make it longer */
+}
+/* Add this CSS to your stylesheet */
+.ant-steps-vertical {
+  height: 50vh;  /* Stretch to full viewport height */
+}
+
+// .ant-steps-vertical .ant-steps-item {
+//   flex: 1; /* Makes each step stretch to occupy available space */
+// }
+
+// .ant-steps-vertical .ant-steps-item-tail {
+//   flex-grow: 1;
+
+/* Make the tick icon bolder */
+.ant-steps-item-icon .ant-steps-icon .ant-steps-icon-finish {
+  font-weight: 700 !important; /* Increase weight for boldness */
+  font-size: 20px !important;  /* Adjust the size if needed */
+}
+
+/* Make the tick inside the circle bolder by increasing stroke width */
+/* Make the tick icon bolder */
+.ant-steps-item-icon .ant-steps-icon .ant-steps-icon-finish {
+  font-weight: 900 !important; /* Increase weight for boldness */
+  font-size: 24px !important;  /* Adjust the size if needed */
+  stroke-width: 3px !important; /* Increase stroke width to make the tick bolder */
+
+}
