@@ -1,9 +1,14 @@
 import Signup from '../../assets/signup.png';
 import './Tellaboutcompy.scss';
-import { useNavigate } from 'react-router-dom';
 
-const Tellaboutcompy = () => {
-  const navigate = useNavigate();
+
+type props = {
+  next :()=> void;
+  prev :()=> void
+
+}
+const Tellaboutcompy = ({next , prev} : props) => {
+  
   return (
     <div className='Container_0'>
       <div className="sidebar">
@@ -40,12 +45,12 @@ const Tellaboutcompy = () => {
           </div>
         </div>
         <div className='bt_5'>
-          <button onClick={() => navigate('/tellabturslf')}>
+          <button onClick={prev}>
             Previous
           </button>
         </div>
         <div className='bt_6'>
-          <button onClick={() => navigate('/invitetm')}>
+          <button onClick={next}>
             Next Step
           </button>
         </div>

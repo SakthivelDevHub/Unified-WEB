@@ -1,9 +1,23 @@
 import './Tellabturslf.scss'
 import Signup from '../../assets/signup.png';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
+type Props = {
+  next: () => void;
+  prev: () => void;
+};
+// DESTRUCTURIGS
+// const person = {
+//   name:"abc",
+//   age:20
 
-const Tellabturslf = () => {
-  const navigate = useNavigate();
+// }
+// const {name , age} = person
+// console.log(name);
+// console.log(age);
+
+
+const Tellabturslf = ({ next, prev }: Props) => {
+ 
   return (
   <div className='Container_0'>
     <div className="sidebar">
@@ -44,12 +58,12 @@ const Tellabturslf = () => {
 </div>
         <div  className='footer'>
           <div className='bt_3'>
-            <button  onClick={()=>navigate('/')}>
+            <button  onClick={prev}>
               Previous
             </button>
           </div>
         <div className='bt_4'>
-          <button onClick={()=>navigate('/tellabtcompy')}>
+          <button onClick={next}>
             Next Step
           </button>
         </div>
