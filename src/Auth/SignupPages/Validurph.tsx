@@ -1,10 +1,10 @@
 // import React from 'react'clear
 import './Validurph.scss'
 import white from '../../assets/white.png';
-import { useNavigate } from 'react-router-dom';
+//import { useNavigate } from 'react-router-dom';
 import Customstep from '../../Component/Customstep'; // Adjust the path as needed
-const validurph = () => {
-  const navigate = useNavigate();
+const validurph = ({ next }: { next: () => void }) => {
+  
   return (
     <div className='Container_0'>
     <div className="sidebar">
@@ -55,13 +55,8 @@ const validurph = () => {
        
         </div>
         <div  className='footer'>
-          <div className='bt_1'>
-            <button onClick={() => navigate('/Signin')}>
-              Previous
-            </button>
-          </div>
         <div className='bt_2' >
-          <button onClick={() => navigate('/tellabturslf')}>
+          <button onClick={next}>
             Next Step
           </button>
         </div>
