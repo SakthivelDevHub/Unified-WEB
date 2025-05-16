@@ -1,27 +1,17 @@
 import './Tellabturslf.scss'
-import Signup from '../../assets/signup.png';
-//import { useNavigate } from 'react-router-dom';
+import white from '../../assets/white.png';
+import Customstep from '../../Component/Customstep';
 type Props = {
   next: () => void;
   prev: () => void;
 };
-// DESTRUCTURIGS
-// const person = {
-//   name:"abc",
-//   age:20
-
-// }
-// const {name , age} = person
-// console.log(name);
-// console.log(age);
-
-
 const Tellabturslf = ({ next, prev }: Props) => {
  
   return (
   <div className='Container_0'>
     <div className="sidebar">
-    <img src={Signup}/>
+    <img src ={white}/> 
+    <Customstep/>
    </div>  
       <div className='main'>
         <div className='header'>
@@ -32,7 +22,7 @@ const Tellabturslf = ({ next, prev }: Props) => {
         <div className="form-container3">
         <div className="inputgroup" >
       <label htmlFor="service">why will you use the service?</label><br/>
-      <select style={{marginTop: "10px"}}>
+      <select>
       <option disabled selected>Select your service</option>
       <option>Work</option>
       <option>Intern</option>
@@ -40,7 +30,7 @@ const Tellabturslf = ({ next, prev }: Props) => {
       </div>
       <div className="inputgroup2">
         <label htmlFor="positon">What describe you best?</label><br/>
-        <select style={{marginTop: "10px"}}>
+        <select >
           <option disabled selected>Select your role</option>
           <option>UI/UX designer</option>
           <option>Front-End developer</option>
@@ -52,11 +42,11 @@ const Tellabturslf = ({ next, prev }: Props) => {
       <div className='inputgroup3'>
   <label htmlFor="what describe you best?">what describe you best?</label>
     <input type="radio" name="q/a" value={"Yes"}/>Yes
-    <input type="radio" name="q/a" value={"No"}/>No
+    <input type="radio" name="q/a" value={"No"}/>no
   </div> 
     </div>
 </div>
-        <div  className='footer'>
+       <footer>
           <div className='bt_3'>
             <button  onClick={prev}>
               Previous
@@ -67,10 +57,18 @@ const Tellabturslf = ({ next, prev }: Props) => {
             Next Step
           </button>
         </div>
-        </div>
+      </footer>
       </div>
     </div>
   )
 }
 
 export default Tellabturslf
+
+
+
+
+
+
+
+  

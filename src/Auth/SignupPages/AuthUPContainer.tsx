@@ -3,6 +3,7 @@ import Validurph from "./Validurph";
 import Tellabturslf from "./Tellabturslf";
 import Tellaboutcompy from "./Tellaboutcompy";
 import Invitetm from "./Invitetm";
+import Registd from "./registd";
 
 export default function AuthSignUpContainer() {
 
@@ -16,7 +17,11 @@ export default function AuthSignUpContainer() {
             {step === 1 && <Validurph next={nextStep} />}
             {step === 2 && <Tellabturslf next={nextStep} prev={prevStep} />}
             {step === 3 && <Tellaboutcompy next={nextStep} prev={prevStep} />}
-            {step === 4 && <Invitetm prev={prevStep} />}
+            {step === 4 && <Invitetm next={nextStep} prev={prevStep} />}
+            {step === 5 && <Registd next={nextStep} prev={prevStep}/>}
+            {step === 6 && <Validurph next={function (): void {
+                throw new Error("Function not implemented.");
+            } }/>}
         </div>
     )
 

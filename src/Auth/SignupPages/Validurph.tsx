@@ -1,7 +1,5 @@
-// import React from 'react'clear
 import './Validurph.scss'
 import white from '../../assets/white.png';
-//import { useNavigate } from 'react-router-dom';
 import Customstep from '../../Component/Customstep'; // Adjust the path as needed
 const validurph = ({ next }: { next: () => void }) => {
   

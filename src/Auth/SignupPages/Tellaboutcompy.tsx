@@ -1,5 +1,7 @@
-import Signup from '../../assets/signup.png';
 import './Tellaboutcompy.scss';
+import white from '../../assets/white.png';
+
+import Customstep from '../../Component/Customstep';
 
 
 type props = {
@@ -12,7 +14,8 @@ const Tellaboutcompy = ({next , prev} : props) => {
   return (
     <div className='Container_0'>
       <div className="sidebar">
-        <img src={Signup} alt="Signup" />
+         <img src ={white}/> 
+    <Customstep/>
       </div>  
       <div className='main'>
         <div className='header'>
@@ -29,7 +32,7 @@ const Tellaboutcompy = ({next , prev} : props) => {
               <option>IT and programming</option>
               <option>Marketing</option>
               <option>Finance</option>
-            </select>
+            </select> 
 
             <label className="label">How many people in your team?</label>
             <div className="team-options">
@@ -44,6 +47,7 @@ const Tellaboutcompy = ({next , prev} : props) => {
             </div>
           </div>
         </div>
+        <footer>
         <div className='bt_5'>
           <button onClick={prev}>
             Previous
@@ -54,6 +58,7 @@ const Tellaboutcompy = ({next , prev} : props) => {
             Next Step
           </button>
         </div>
+      </footer>  
       </div>
     </div>
   );

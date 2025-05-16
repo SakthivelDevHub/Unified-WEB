@@ -1,12 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow: hidden;
-  font-family: "Nunito Sans", sans-serif;
-  font-weight: 600;
-}
 .Container_0{
   display: flex;
 }
@@ -57,24 +48,30 @@
   flex-direction: column;
   
 select{
-  border: 1px solid #7d8592;
+  border: 3px solid #ebeff7;
   border-radius: 10px;
-  padding-inline-end: 240px ;
-  padding-inline-start: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 40px;
+  width: 20vw;
+  padding:10px 0px;
+ 
 }  
+label{
+  margin: 10px;
+  margin-bottom: -1px;
+  font-size: small;
+}
+
+
+
 .inputgroup3{
-input{
+  display: flex ;
   margin: 20px;
+  justify-content: space-between;
+input{
+  margin: 10px;
+  margin-bottom: 5px;
+}
 }
  
-}
-label{
-  color:#7d8592;
-  margin:20px;
-}
 }
 }
 .footer{
@@ -83,7 +80,7 @@ label{
   display:flex;
   justify-content: space-between;
   padding:30px;
-  button{
+   button{
     border-radius: 10px;
     padding: 10px 25px;
     border:none;
